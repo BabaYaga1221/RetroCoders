@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>RetroCoders</title>
+</head>
+
+<body class=" text-white bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="logo.png" class="img-fluid rounded-circle" style="width: 40px; height: 40px;" alt="logo">
+
+            <a class="navbar-brand text-success ms-1 " href="#">RetroCoders</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="cover.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="cp.html">Competitive Programming</a></li>
+                            <li><a class="dropdown-item" href="ctf.html">Capture The Flag</a></li>
+                           
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="p-4 mb-4 text-light bg-dark rounded pt-5 ps-5">
+        <h1 class="fst-italic text-center text-decoration-underline mt-2">Capture The Flag blog</h1>
+        <img src="photo-1520509414578-d9cbf09933a1.jfif" class="img-fluid mt-3" style="width: auto; height: auto;" alt="Competitive Programming">
+    </div>
+    <main clss="container-fluid bg-dark">
+
+        <div class="row g-5 ms-auto">
+            <div class="col-md-8">
+                <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                    From RetroCoders
+                </h3>
+
+
+
+
+                <article class="blog-post">
+                    <h2 class="blog-post-title">Capture The Flag Blog</h2>
+                    <p class="blog-post-meta">December 14, 2020 by <a href="#" class="text-success">farhan</a></p>
+
+                    <p>Capture the flag is a mind sport which held online or on a local network. This sport basically
+                        based on Netwoking and Security faults. Like Competitive Programming , Capture the Flag or CTF
+                        is online sport where players take part and compete among themselves. Again, This is not a
+                        challenge, it a Sport and Again you need prepapration. In this blog, I will give some basic
+                        idea and some very useful tips for CTF.</p>
+                    <img src="bgbg.jfif" class="img-fluid" style="width: auto; height: auto;" alt="Blogs">
+
+                    <h2 class="blog-post-title"> What is CTF?</h2>
+                    <p>As I explained above, CTF is a online sport. The CTF basically divided into two types - </p>
+                    <ul>
+                        <li><strong>Jeopardy style :</strong> In this type of CTF, your are given different type of
+                            questions related to different techniques and you need to find flag which hidden in these
+                            files or codes and summit it. Jeopardy style contains mainly 6 types of questions -
+                            <ol>
+                                <li>Cryptography - (regarding encrpytion/decrpytion)</li>
+                                <li>Web Exploitation - (regarding website attacks)</li>
+                                <li>Reverse Engineering - (regarding Reengineering)</li>
+                                <li>Forencis - (regarding investigation of file)</li>
+                                <li>Binary Exploitation - (regarding binary level manipulation)</li>
+                                <li>Misc - (everything which left like OSINT, pwn, etc..)</li>
+                            </ol>
+                            I know, these all topics make you little confuse. Relax, I will provide you some post
+                            afterwards related these topics seperately.
+                        </li>
+                        <li><strong>Wargames :</strong> Wargames are totally different then jeopardy style. In wargame,
+                            there are two teams, i.e., Red team and Blue team, and both have a common task. The task is
+                            to take control over opponent's server and securing own server simontanously. In Wargames,
+                            you actually saw real heat of the competition. </li>
+
+                    </ul>
+                    <p>Now, the question arise that what to do or where to start.</p>
+                    <h2 class="blog-post-title">Where to start?</h2>
+                    <p>Firstly, I recommend to not even think about Wargames, start with jeopardy style because here you
+                        can explore yourself to which field you like most. And on the behalf of refernces -
+                    <ol>
+                        <li><a href="https://picoctf.org/" class="text-success"> picoCTF</a> : This site provide you basic level of CTF
+                            questions and afterwards take you towards advance questions.</li>
+                        <li>Try to learn any programming language, my recommendation is python, to handle with code
+                            formatting and script writing. Why choose python? I will expalin you later.</li>
+                        <li>Try to be user friendly with linux because most of the tools are in form of script and linux
+                            is best to run them on terminal view. Again, my recommendation is Kali Linux or Parrot OS.
+                        </li>
+                        <li>Take any youtube free course on Networking. It will help you to understanding data
+                            transmission over a network or internet.</li>
+                    </ol>
+                    I think if you are doing this, you will get a better start with CTF. And yeah, final recommendation for
+                    linux setup, try virtual machine and install your linux on that machine, you can use Virtual box by
+                    Oracle.
+                    </p>
+                    <img src="pppp.jfif" class="img-fluid" style="width: auto; height: auto;" alt="Blogs">
+
+                    <h2 class="blog-post-title">References</h2>
+                    <p>The above provided post is sufficient for the beginners to start their CTF jouney.
+                        This block
+                        of post provide references, tips and tricks for CTF.</p>
+                    <p>NOTE: Try to take a look at once a day because I will try to update this block regularly for tips
+                        and
+                        tricks. </p>
+                    <p><strong>Tips:</strong>
+                    <ul>
+                        <li>Try your hands first with web exploitation or OSINT type of question because they are easy
+                            then other types.</li>
+                        <li>Start reading other's Writeups to understand their approch.</li>
+                    </ul>
+                    <strong>Tricks:</strong>
+                    <ul>
+                        <li>Use Kali linux or Parrot OS, it provide you 100 of tools pre-installed in your linux OS.
+                        </li>
+                        <li>For Web Exploitation, if a website included a database, then most likely, these website
+                            exploitable to SQLinjection. Wait...what? SQLinjection? I will explain it later in other
+                            post. By now, you can google it. </li>
+                    </ul>
+                    <strong>References:</strong>
+                    <ul>
+                        <li><a
+                                href="https://drive.google.com/file/d/1GBQ206vsgKc4sKp40IPzyhPzUu8w8ebd/view?usp=sharing" class="text-success">Basics of general skills by picoCTF</a></li>
+                        <li><a
+                                href="https://drive.google.com/file/d/19DdAlnmd2Q4vAXe_o593Ww81uIKFj9q9/view?usp=sharing" class="text-success">Basics of cryptography by picoCTF</a></li>
+                        <li>
+                                <a href="https://drive.google.com/file/d/1f11N28Ett759MVwldAKEiuotTEFyx8gK/view?usp=sharing" class="text-success">Basics of web exploitation by picoCTF</a>
+                        </li>
+                    </ul>
+                    </p>
+                    <h2 class="blog-post-title">Final Words</h2>
+                    <p>I know this blog have nothing right now but I promise to update this blog with more topics. Try
+                        to take look regularly for updates.</p>
+                </article>
+
+
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="position-sticky mt-5" style="top: 2rem;">
+                    <div class="p-4 mb-3 bg-secondary rounded ">
+                        <h4 class="fst-italic">Quote Of The Day</h4>
+                        <p class="mb-0">"Hacking involves a different way of looking at problems that no one's thought of."<strong> - Walter O'Brien</strong></p>
+                    </div>
+                    <!--div class="p-4 mb-3 bg-black rounded mt-3 ">
+            <h4 class="fst-italic">Need Help?</h4>
+            <p class="mb-0">I have a written a blog for Competitive Programming on this website. It will provide you1
+              basic building blocks and some tips and tricks.
+              <a href="blog1.html"> Try this out</a> or you can message me on github for any kind of question.
+            </p>
+          </div-->
+
+                    <!--div class="p-4">
+                    <h4 class="fst-italic">Archives</h4>
+                    <ol class="list-unstyled mb-0">
+                        <li><a href="#">March 2021</a></li>
+                        <li><a href="#">February 2021</a></li>
+                        <li><a href="#">January 2021</a></li>
+                        <li><a href="#">December 2020</a></li>
+                        <li><a href="#">November 2020</a></li>
+                        <li><a href="#">October 2020</a></li>
+                        <li><a href="#">September 2020</a></li>
+                        <li><a href="#">August 2020</a></li>
+                        <li><a href="#">July 2020</a></li>
+                        <li><a href="#">June 2020</a></li>
+                        <li><a href="#">May 2020</a></li>
+                        <li><a href="#">April 2020</a></li>
+                    </ol>
+                </div-->
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+    </main>
+
+    <footer class="mt-1 text-white-50">
+        <p class="text-center">RetroCoders blogs and tutorials. <a href="#" class="text-success">@RetroCoders</a> by <a
+                href="#" class="text-success">@farhan</a></p>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

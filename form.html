@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        .divider-text {
+            position: relative;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .divider-text span {
+            padding: 7px;
+            font-size: 12px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .divider-text:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+            top: 55%;
+            left: 0;
+            z-index: 1;
+        }
+
+        .btn-facebook {
+            background-color: #405D9D;
+            color: #fff;
+        }
+
+        .btn-twitter {
+            background-color: #42AEEC;
+            color: #fff;
+        }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="png-transparent-circle-circle-navbar-area-circle-thumbnail.png" alt="" width="30" height="24">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid">
+        
+
+
+
+        <div class="card bg-dark">
+            <article class="card-body mx-auto my-5" style="max-width: 400px;">
+                <h4 class="card-title mt-3 text-center text-white">Create Account</h4>
+                <p class="text-center text-white">Get started with your free account</p>
+                
+                <form>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend ">
+                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        </div>
+                        <input name="" class="form-control" placeholder="Full name" type="text">
+                    </div> <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                        </div>
+                        <input name="" class="form-control" placeholder="Email address" type="email">
+                    </div> <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                        </div>
+                        <select class="custom-select" style="max-width: 120px;">
+                            <option selected="">+971</option>
+                            <option value="1">+972</option>
+                            <option value="2">+198</option>
+                            <option value="3">+701</option> 
+                        </select>
+                        <input name="" class="form-control" placeholder="Phone number" type="text">
+                    </div> <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                        </div>
+                        <select class="form-control">
+                            <option selected=""> Select your level</option>
+                            <option>beginner</option>
+                            <option>intermediate</option>
+                            <option>expert</option>
+                        </select>
+                    </div> <!-- form-group end.// -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        <input class="form-control" placeholder="Create password" type="password">
+                    </div> <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        <input class="form-control" placeholder="Repeat password" type="password">
+                    </div> <!-- form-group// -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-block"> Create Account </button>
+                    </div> <!-- form-group// -->
+                    <p class="text-center text-white">Have an account? <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" >Log In</a> </p>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <main class="form-signin">
+                                    <form>
+                                      <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+                                      <h1 class="h3 mb-3 text-center fw-normal">Please sign in</h1>
+                                  
+                                      <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Email address</label>
+                                      </div>
+                                      <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                      </div>
+                                  
+                                      <div class="checkbox mb-3">
+                                        <label>
+                                          <input type="checkbox" value="remember-me text-center"> Remember me
+                                        </label>
+                                      </div>
+                                      <button class="w-50 btn btn-lg btn-primary" type="submit">Sign in</button>
+                                      <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+                                    </form>
+                                  </main>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </form>
+            </article>
+        </div> <!-- card.// -->
+
+    </div>
+    <!--container end.//-->
+
+    <br><br>
+    <article class="bg-secondary mb-3">
+        <div class="card-body text-center">
+            <h3 class="text-white mt-3">Bootstrap 4 UI KIT</h3>
+            <p class="h5 text-white">Components and templates <br> for Ecommerce, marketplace, booking websites
+                and product landing pages</p> <br>
+            <p><a class="btn btn-warning" target="_blank" href="http://bootstrap-ecommerce.com/">
+                    Bootstrap-ecommerce.com
+                    <i class="fa fa-window-restore "></i></a></p>
+        </div>
+        <br><br>
+    </article>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
