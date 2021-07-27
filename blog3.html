@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>RetroCoders</title>
+</head>
+
+<body class=" text-white bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="logo.png" class="img-fluid rounded-circle" style="width: 40px; height: 40px;" alt="logo">
+
+            <a class="navbar-brand text-success ms-1 " href="#">RetroCoders</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="cover.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="cp.html">Competitive Programming</a></li>
+                            <li><a class="dropdown-item" href="ctf.html">Capture The Flag</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="p-4 mb-4 text-light bg-dark rounded pt-5 ps-5">
+        <h1 class="fst-italic text-center text-decoration-underline mt-2">Capture The Flag blog</h1>
+        <img src="crypto1.png" class="img-fluid mt-3" style="width: 1200px; height: 500px;"
+            alt="Competitive Programming">
+    </div>
+    <main clss="container-fluid bg-dark">
+
+        <div class="row g-5 ms-auto">
+            <div class="col-md-8">
+                <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                    From RetroCoders
+                </h3>
+
+
+
+
+                <article class="blog-post">
+                    <h2 class="blog-post-title">Cryptograhy Blog</h2>
+                    <p class="blog-post-meta">July 26, 2021 by <a href="#" class="text-success">farhan</a></p>
+
+                    <p class="fs-5">As the blog's name suggesting, Cryptography is an encryption or decryption of data
+                        over the
+                        internet/ local server. Cryptography is a big part in networking and security. So, the question
+                        is, "did it also important for CTF?" The answer is YES. Cryptography is also play a very
+                        important role in CTFs as they have seperate question type in CTF.</p>
+                    <img src="crypto2.jpeg" class="img-fluid" style="width: auto; height: auto;" alt="Blogs">
+
+                    <h2 class="blog-post-title mt-2"> What is Cryptograhy?</h2>
+                    <p class="fs-5">As I explained above, Cryptography is an encryption or decryption of data over a network. Let me
+                        explain the mechanism of cryptography - </p>
+                    <ul>
+                        <p class="fs-5">Taking a example of whatsapp, when you (means client) send a message to your friend (means
+                            another client). Firstly, message get encoded by using some algorithms and then pass over the
+                            whatsapp's network with your IP address and encrypted message and some more little
+                            information which are required. When the message is received by your friend, the message
+                            then decrypted and
+                            show the message on whatsapp with your number.</p>
+                    </ul>
+                    <p class="fs-5">This is an example that how cryptography works. NOTE - if someone get your encrypted message
+                        using spoofing or packet capturing, then he/she can also decode the message using the algorithm
+                        use by whatsapp. Well for your information, whatsapp using <strong> Curve25519</strong>
+                        algorithm for encrptyion. How i know this? Salute to google search.</p>
+                    <h2 class="blog-post-title mt-2">Types of Cryptograhy</h2>
+                    <p class="fs-5">Cryptograhy is mainly divided in three types -
+                    <ol>
+                        <li class="fs-5"><strong>Symmetric Key Cryptography -</strong> In this type of cryptography, Sender and
+                            reciever have a same key for encryption or decryption of data. The key is kind of password
+                            through which it is encrpyted or decrpyted. So , the key over the encrpytion is same on both
+                            side. Some examples are RC4, AES, DES, etc.</li>
+                        <li class="fs-5"><strong>Hashing Cryptography -</strong> Hashing is a method of cryptography that converts any
+                            form of data into a unique string of text. Any piece of data can be hashed, no matter its
+                            size, type, length, the hash that any data produces is always of same length. Hashing
+                            techniques are very common these days for encrpytion of data even whatsapp, email, and many
+                            other companies using it. Some examples are MD5, #SHA-1, #SHA-256, #SHA-512, etc. Hashing is
+                            also used in <strong> Cryptocurrency</strong>.</li>
+                        <li class="fs-5"><strong>Asymmetric Key Cryptography -</strong> Asymmetric Cryptography is also known as public
+                            key cryptography. In this method, there are two keys for encrpytion and decrpytion. The data
+                            is encypted with some key and decrpyted using some other key. That's why, This algorithm is
+                            better then symmetric algorithm but its speed of encrpytion and decrpytion is slow then
+                            symmetric algorithm.</li>
+                    </ol>
+                    </p>
+                    <img src="crypto3.png" class="img-fluid" style="width: auto; height: auto;" alt="Blogs">
+                    <h2 class="blog-post-title mt-2">Tools For Cryptography</h2>
+                    <p class="fs-5">There are many tools for cryptography in kali linux or on internet for use in CTF - </p>
+                    <ul>
+                        <li><strong>John the ripper toolkit</strong></li>
+                        <li><strong>Hydra toolkit</strong></li>
+                        <li><strong>hashcat tool</strong></li>
+                        <li><strong>Johnny (GUI interface of John the ripper)</strong></li>
+                    </ul>
+                    <p class="fs-5">There are many other tools but I think this much is sufficient.</p>
+                    <h2 class="blog-post-title mt-2">References</h2>
+                    <p class="fs-5">I think the above introduction of cryptography is sufficient for your understanding. I am also
+                        providing some links regarding cryptography for better understanding through writeups.</p>
+                    <!--p><strong>Tips And Tricks :</strong> </p-->
+
+                    <strong class="fs-5">References:</strong>
+                    <ul>
+                        <li><a href="https://github.com/DownUnderCTF/Challenges_2020_public/tree/master/crypto/rot-i"
+                                class="text-success">ROT-i</a> : <a
+                                href="https://github.com/DownUnderCTF/Challenges_2020_public/blob/master/crypto/rot-i/exploit/writeup.md">
+                                Writeup by DownUnderCTF</a></li>
+                        <li><a href="https://github.com/DownUnderCTF/Challenges_2020_public/tree/master/crypto/extra-cool-block-chaining"
+                                class="text-success">Extra Cool Block Chaining</a> : <a
+                                href="https://github.com/DownUnderCTF/Challenges_2020_public/blob/master/crypto/extra-cool-block-chaining/exploit/writeup.md">
+                                Writeup by DownUnderCTF</a></li>
+                        <li><a href="https://github.com/kevinjycui/picoCTF-2019-writeup/blob/master/Cryptography/Flags/README.md"
+                                class="text-success">Flags</a> : <a
+                                href="https://github.com/kevinjycui/picoCTF-2019-writeup/blob/master/Cryptography/Flags/README.md">
+                                Writeup by kevinjycui</a></li>
+                    </ul>
+                    </p>
+                    <h2 class="blog-post-title">Final Words</h2>
+                    <p class="fs-5">Cryptography is not a small topic. If you go in depth, you find that cryptography is basically
+                        involve in everything and in every question.</p>
+                </article>
+
+
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="position-sticky mt-5" style="top: 2rem;">
+                    <div class="p-4 mb-3 bg-secondary rounded ">
+                        <h4 class="fst-italic">Quote Of The Day</h4>
+                        <p class="mb-0">"Privacy is an inherent human right, and a requirement for maintaining the human
+                            condition with dignity and respect."<strong> - Bruce Schneier</strong></p>
+                    </div>
+                    <!--div class="p-4 mb-3 bg-black rounded mt-3 ">
+            <h4 class="fst-italic">Need Help?</h4>
+            <p class="mb-0">I have a written a blog for Competitive Programming on this website. It will provide you1
+              basic building blocks and some tips and tricks.
+              <a href="blog1.html"> Try this out</a> or you can message me on github for any kind of question.
+            </p>
+          </div-->
+
+                    <!--div class="p-4">
+                    <h4 class="fst-italic">Archives</h4>
+                    <ol class="list-unstyled mb-0">
+                        <li><a href="#">March 2021</a></li>
+                        <li><a href="#">February 2021</a></li>
+                        <li><a href="#">January 2021</a></li>
+                        <li><a href="#">December 2020</a></li>
+                        <li><a href="#">November 2020</a></li>
+                        <li><a href="#">October 2020</a></li>
+                        <li><a href="#">September 2020</a></li>
+                        <li><a href="#">August 2020</a></li>
+                        <li><a href="#">July 2020</a></li>
+                        <li><a href="#">June 2020</a></li>
+                        <li><a href="#">May 2020</a></li>
+                        <li><a href="#">April 2020</a></li>
+                    </ol>
+                </div-->
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+    </main>
+
+    <footer class="mt-1 text-white-50">
+        <p class="text-center">RetroCoders blogs and tutorials. <a href="cover.html" class="text-success">@RetroCoders</a> by <a
+                href="#" class="text-success">@farhan</a></p>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
